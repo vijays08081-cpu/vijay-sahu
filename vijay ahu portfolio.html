@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- SEO Meta Tags -->
+  <title>Vijay Sahu | Web Developer Portfolio</title>
+  <meta name="description"
+    content="Official portfolio website of Vijay Sahu showcasing projects, skills, achievements, and contact information." />
+  <meta name="keywords" content="Vijay Sahu, portfolio, Web developer, web developer, frontend developer" />
+  <meta name="author" content="Vijay Sahu" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Vijay Sahu Portfolio" />
+  <meta property="og:description" content="Explore projects and skills of Vijay Sahu." />
+  <meta property="og:type" content="website" />
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      background: #ffffff;
+      color: #222222;
+    }
+
+    .skip-link {
+      position: absolute;
+      top: -40px;
+      left: 10px;
+      background: #000;
+      color: #fff;
+      padding: 10px;
+      z-index: 100;
+    }
+
+    .skip-link:focus {
+      top: 10px;
+    }
+
+    header {
+      background: #111827;
+      color: white;
+      padding: 1rem 2rem;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .logo {
+      font-size: 1.5rem;
+      font-weight: bold;
+    }
+
+    .nav-links {
+      display: flex;
+      list-style: none;
+      gap: 1.5rem;
+    }
+
+    .nav-links a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .nav-links a:hover,
+    .nav-links a:focus {
+      text-decoration: underline;
+    }
+
+    section {
+      padding: 5rem 2rem;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .hero {
+      min-height: 90vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+
+    .hero-content {
+      max-width: 700px;
+    }
+
+    .hero h1 {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+    }
+
+    .hero p {
+      margin-bottom: 1.5rem;
+      font-size: 1.1rem;
+    }
+
+    .btn {
+      display: inline-block;
+      background: #111827;
+      color: white;
+      padding: 0.9rem 1.5rem;
+      border-radius: 8px;
+      text-decoration: none;
+      border: none;
+      cursor: pointer;
+      font-size: 1rem;
+    }
+
+    .btn:hover,
+    .btn:focus {
+      opacity: 0.9;
+    }
+
+    h2 {
+      margin-bottom: 2rem;
+      font-size: 2rem;
+      text-align: center;
+    }
+
+    .card-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .card {
+      background: #f4f4f4;
+      padding: 1.5rem;
+      border-radius: 12px;
+      transition: transform 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .card h3 {
+      margin-bottom: 1rem;
+    }
+
+    .about p {
+      margin-bottom: 1rem;
+      max-width: 800px;
+      margin-inline: auto;
+      text-align: center;
+    }
+
+    .contact-form {
+      max-width: 600px;
+      margin: auto;
+    }
+
+    .form-group {
+      margin-bottom: 1rem;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 0.5rem;
+      font-weight: bold;
+    }
+
+    input,
+    textarea {
+      width: 100%;
+      padding: 0.9rem;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 1rem;
+    }
+
+    input:focus,
+    textarea:focus {
+      outline: 3px solid #2563eb;
+    }
+
+    footer {
+      background: #111827;
+      color: white;
+      text-align: center;
+      padding: 1.5rem;
+      margin-top: 3rem;
+    }
+
+    @media (max-width: 768px) {
+      nav {
+        flex-direction: column;
+        gap: 1rem;
+      }
+
+      .nav-links {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .hero h1 {
+        font-size: 2rem;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <a href="#main-content" class="skip-link">Skip to Content</a>
+
+  <header role="banner">
+    <nav aria-label="Main Navigation">
+      <div class="logo">Vijay Sahu</div>
+
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main-content">
+
+    <section id="home" class="hero" aria-labelledby="hero-heading">
+      <div class="hero-content">
+        <h1 id="hero-heading">Hi, I'm Vijay Sahu</h1>
+
+        <p>
+          A passionate Full Stack Developer focused on building modern,
+          responsive, accessible, and SEO-friendly web applications.
+        </p>
+
+        <a href="#projects" class="btn">View Projects</a>
+      </div>
+    </section>
+
+    <section id="about" class="about" aria-labelledby="about-heading">
+      <h2 id="about-heading">About Me</h2>
+
+      <p>
+        I am a Full Stack Developer passionate about creating clean,
+        responsive, and accessible digital experiences using modern web
+        technologies.
+      </p>
+
+      <p>
+        I enjoy learning new technologies, solving real-world problems,
+        and improving user experiences through thoughtful design and
+        development.
+      </p>
+    </section>
+
+    <section id="skills" aria-labelledby="skills-heading">
+      <h2 id="skills-heading">Skills</h2>
+
+      <div class="card-grid">
+
+        <article class="card">
+          <h3>Frontend</h3>
+          <p>HTML5, CSS3, JavaScript, React.js</p>
+        </article>
+
+        <article class="card">
+          <h3>Backend</h3>
+          <p>Node.js, Express.js, MongoDB</p>
+        </article>
+
+        <article class="card">
+          <h3>Tools</h3>
+          <p>Git, GitHub, VS Code, REST APIs</p>
+        </article>
+
+      </div>
+    </section>
+
+    <section id="projects" aria-labelledby="projects-heading">
+      <h2 id="projects-heading">Projects</h2>
+
+      <div class="card-grid">
+
+        <article class="card">
+          <h3>Task Management App</h3>
+          <p>
+            A responsive task management application with CRUD operations
+            and authentication.
+          </p>
+        </article>
+
+        <article class="card">
+          <h3>Portfolio Website</h3>
+          <p>
+            A modern accessible portfolio website using semantic HTML5 and
+            WCAG standards.
+          </p>
+        </article>
+
+        <article class="card">
+          <h3>Weather Dashboard</h3>
+          <p>
+            Real-time weather dashboard using API integration and responsive UI.
+          </p>
+        </article>
+
+      </div>
+    </section>
+
+    <section id="contact" aria-labelledby="contact-heading">
+      <h2 id="contact-heading">Contact Me</h2>
+
+      <form class="contact-form" aria-label="Accessible Contact Form">
+
+        <div class="form-group">
+          <label for="name">Full Name</label>
+          <input type="text" id="name" name="name" required aria-required="true" />
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email Address</label>
+          <input type="email" id="email" name="email" required aria-required="true" />
+        </div>
+
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="6" required aria-required="true"></textarea>
+        </div>
+
+        <button type="submit" class="btn">Send Message</button>
+
+      </form>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Vijay Sahu. All Rights Reserved.</p>
+  </footer>
+
+  <script>
+    const form = document.querySelector('.contact-form');
+
+    form.addEventListener('submit', function (event) {
+      event.preventDefault();
+
+      alert('Your message has been submitted successfully!');
+
+      form.reset();
+    });
+  </script>
+
+</body>
+
+</html>
